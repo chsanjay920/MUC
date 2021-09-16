@@ -20,17 +20,16 @@ body {
       color: rgb(255, 255, 255);
   }
   .header h1{
-    padding-top: 10%;
+    padding: 10%;
     margin-block-start: 0em;
-    margin-bottom: 5%;
   }
 
   .header button{
     background: rgb(255, 115, 0);
       padding: 10px;
       border-radius: 20px;
-      width: 150px;
-      height: 50px;
+      width: 15%;
+      height: 12%;
       color: white;
       font-size: medium;
       font-style: bold;
@@ -82,3 +81,56 @@ body {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
+  /* flexbox */
+  .wrapper {
+    margin: 0 auto;
+    width: 70%;
+  }
+  
+  .cards {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .cards:hover{
+    cursor: pointer;
+  }
+  
+  .cards li {
+    border: 2px solid #490A3D;
+    border-radius:5px;
+    background-color: #BD1550;
+    color: #fff;
+    flex: 1 1 200px;
+  }
+  
+  .cards h2 {
+    background-color: #490A3D;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .cards p {
+    padding: 10px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .flex li {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+    grid-gap: 20px;
+  }
+/* end-flexbox   */
